@@ -1,5 +1,5 @@
 import express from "express";
-import eventos from "./eventosRoutes.js";
+import eventos from "./src/routes/eventosRoutes.js";
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
