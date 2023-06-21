@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb+srv://anyOne:MoreEvents1234@moreevents.3izlpjw.mongodb.net/MoreEvents");
+mongoose.connect(`mongodb+srv://${DATABASE_usePassword}@moreevents.3izlpjw.mongodb.net/MoreEvents`);
+
+// anyOne:MoreEvents1234
 
 let db = mongoose.connection;
 
