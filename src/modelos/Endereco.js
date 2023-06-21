@@ -15,3 +15,4 @@ const enderecoSchema = new mongoose.Schema(
 const enderecos = mongoose.model('enderecos', enderecoSchema);
 
 export default enderecos;
+

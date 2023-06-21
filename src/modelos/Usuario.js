@@ -7,7 +7,12 @@ const usuarioSchema = new mongoose.Schema(
         data_nascimento: {type: Date, required: true},
         cpf: {type: Number, required: true},
         telefone: {type: Number, required: true},
-        endereco: {type: mongoose.Schema.Types.ObjectId, ref: 'enderecos', required: true},
+        cep: {type: String, required: true},
+        estado: {type: String, required: true},
+        cidade: {type: String, required: true},
+        bairro: {type: String, required: true},
+        numero: {type: Number, required: true},
+        complemento: {type: String},
         e_mail: {type: String, required: true},
         senha: {type: String, required: true}
     }
